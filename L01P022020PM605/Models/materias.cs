@@ -15,6 +15,6 @@ namespace L01P022020PM605.Models
         public int unidades_valorativas { get; set; }
         [Display(Name = "Estado")]
         [Required(ErrorMessage = "El estado No es opcional")]
-        public int estado { get; set; }
+        public string estado { get; set; }
     }
 }
