@@ -1,10 +1,10 @@
-﻿@model IEnumerable<L01P022020PM605.Models.materias>
+﻿@model IEnumerable<L01P022020PM605.Models.alumnos>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Tabla materias</h1>
+<h1>Tabla Alumnos</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -13,10 +13,16 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.materia)
+                @Html.DisplayNameFor(model => model.codigo)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.unidades_valorativas)
+                @Html.DisplayNameFor(model => model.nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.apellidos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dui)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.estado)
@@ -28,10 +34,16 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.materia)
+                @Html.DisplayFor(modelItem => item.codigo)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.unidades_valorativas)
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellidos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dui)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.estado)
